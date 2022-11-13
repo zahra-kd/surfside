@@ -1,0 +1,340 @@
+/*-------mixin for changing the bg color of the first navbar according to different screens-----*/
+/*-----------------------------------------------header------------------------------------------*/
+header {
+  /*-------------------------------first navbar--------------------------------------*/
+  /*-----------------------------------------second navbar-----------------------------------*/
+  /*------------------------------------------------main navbar------------------------------------------------------*/
+}
+header .first-nav {
+  /*--dropdown list for languages--*/
+}
+@media screen and (min-width: 0px) {
+  header .first-nav {
+    background-color: white;
+  }
+}
+@media screen and (min-width: 576px) {
+  header .first-nav {
+    background-color: white;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .first-nav {
+    background-color: rgb(243, 236, 194);
+  }
+}
+header .first-nav div:nth-child(2) span {
+  color: #ff4500;
+  animation-name: shop_now;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes shop_now {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header .first-nav .dropdown .dropdown-toggle {
+  border: none;
+}
+@media screen and (min-width: 0px) {
+  header .first-nav .dropdown .dropdown-toggle {
+    background-color: white;
+  }
+}
+@media screen and (min-width: 576px) {
+  header .first-nav .dropdown .dropdown-toggle {
+    background-color: white;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .first-nav .dropdown .dropdown-toggle {
+    background-color: rgb(243, 236, 194);
+  }
+}
+header .first-nav .dropdown-item img {
+  width: 30px;
+  margin-right: 5px;
+}
+header .first-nav .bi-key {
+  transform: rotate(30deg);
+}
+header .second_nav .navbar-brand img {
+  width: 200px;
+}
+header .second_nav .heart_icon::before {
+  content: "4";
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff4500;
+  position: absolute;
+  right: -55%;
+}
+header .second_nav .bag_icon::before {
+  content: "7";
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff4500;
+  position: absolute;
+  right: -45%;
+}
+header .second_nav div form input:focus {
+  box-shadow: none;
+  border-color: #ff4500;
+}
+header .main_nav .navbar-brand {
+  color: #ff4500;
+}
+header .main_nav .nav-item a {
+  color: black;
+}
+header .main_nav .nav-item a:hover {
+  color: #ff4500;
+}
+header .main_nav .nav-item .home_link {
+  color: #ff4500;
+}
+header .main_nav .dropdown {
+  list-style: none;
+}
+header .main_nav .vertical_list {
+  list-style: none;
+}
+header .main_nav div div div:last-child span {
+  color: #ff4500;
+}
+
+/*-----------------------------------------------main--------------------------------------------*/
+main .hight-light { /*----------------------------section hight light------------------------*/ }
+main .hight-light .carousel-item h1 {
+  color: #ff4500;
+}
+main .hight-light .carousel-item .btn {
+  background-color: rgb(236, 234, 227);
+  color: #ff4500;
+}
+main .categories { /*-----------------------------section categories--------------------------*/ }
+main .categories .feature_box > p {
+  border-radius: 5px;
+}
+main .categories .feature_container div:first-child div p {
+  background-color: rgb(253, 221, 228);
+}
+main .categories .feature_container div:nth-child(2) div p {
+  background-color: #d1e8f2;
+}
+main .categories .feature_container div:nth-child(3) div p {
+  background-color: #cdebbc;
+}
+main .categories .feature_container div:nth-child(4) div p {
+  background-color: #cdd4f8;
+}
+main .categories .feature_container div:nth-child(5) div p {
+  background-color: #f6DBf6;
+}
+main .categories .feature_container div:last-child div p {
+  background-color: #FFF2e5;
+}
+main .categories .feature_box {
+  border: 0.5px solid rgb(194, 240, 194);
+  transition: transform 0.5s;
+}
+main .categories .feature_box:hover {
+  transform: translateY(-9px);
+}
+main .categories .feature_box p {
+  color: #ff4500;
+  font-weight: bold;
+}
+main .catalog { /*---------------------------------section catalog---------------------------*/ }
+main .catalog .container .catalog_btn button:first-of-type {
+  background-color: #fde1bd;
+  color: #ff4500;
+}
+main .catalog .container .catalog_btn .btn {
+  font-weight: bold;
+  background-color: #eeeeee;
+  margin-right: 8px;
+  border-radius: 5px;
+  transition: transform 0.5s;
+}
+main .catalog .container .catalog_btn .btn:hover {
+  background-color: #fde1bd;
+  color: #ff4500;
+  transform: translateY(-5px);
+}
+main .catalog .container .catalog_btn a {
+  color: #ff4500;
+}
+main .catalog .container .catalog_btn a i {
+  transition: transform 0.5s;
+}
+main .catalog .container .catalog_btn a:hover i {
+  transform: translateX(4px);
+}
+main .catalog .container .catalog_container .catalog_item {
+  border: 0.5px solid #cbf4d2;
+  border-radius: 18px;
+}
+main .catalog .container .catalog_container .catalog_item:hover {
+  box-shadow: 0px 0px 15px rgb(214, 236, 214);
+}
+main .catalog .container .catalog_container .catalog_item:hover .catalog_item_pic .flip_pic {
+  opacity: 1;
+}
+main .catalog .container .catalog_container .catalog_item:hover .catalog_item_pic .flip_pic img {
+  transform: scale(1.07);
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_pic .flip_pic {
+  opacity: 0;
+  overflow: hidden;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_pic .flip_pic img {
+  transition: transform 0.5s;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_pic .flip_pic div > div {
+  bottom: 20%;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e8f6ea;
+  transition: transform 0.5s;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_pic .flip_pic div > div .bi {
+  font-size: 20px !important;
+  color: #ff4500;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_pic .flip_pic div > div:hover {
+  background-color: #ff4500;
+  transform: translateY(-6px);
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_pic .flip_pic div > div:hover .bi {
+  color: white !important;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_detail div:first-of-type i {
+  color: rgb(244, 228, 5);
+  font-size: 12px;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_detail div:last-of-type {
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e8f6ea;
+  transition: transform 0.5s;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_detail div:last-of-type:hover {
+  background-color: #ff4500;
+  transform: translateY(-6px);
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_detail div:last-of-type:hover .bi-bag-plus {
+  color: white;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_detail div:last-of-type .bi-bag-plus {
+  font-size: 20px !important;
+  color: #ff4500;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_detail p:first-of-type {
+  font-size: small;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_detail p:first-of-type:hover {
+  color: #ff4500 !important;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_detail p:nth-of-type(2):hover {
+  color: #ff4500;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_detail p:last-of-type {
+  color: #ff4500;
+}
+main .catalog .container .catalog_container .catalog_item .catalog_item_detail span {
+  font-size: small;
+}
+main .banner { /*-------------------------banner services---------------------*/ }
+main .banner div {
+  background-image: url(image/banner-4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .banner div p {
+  color: #ff4500;
+}
+main .banner div .btn {
+  color: white;
+  background-color: #ff4500;
+}
+main .popular_categories h4 span {
+  color: #ff4500;
+}
+main .popular_categories .popular_category_card {
+  border: 0.5px solid rgb(194, 240, 194);
+  border-radius: 18px;
+}
+main .popular_categories .popular_category_card:hover p {
+  color: #ff4500;
+}
+main .popular_categories .popular_category_card:hover div img {
+  transform: scale(1.1);
+}
+main .popular_categories .popular_category_card div img {
+  transition: transform 0.5s;
+}
+main .popular_categories .popular_categories_banners .banner_box p:first-child {
+  font-size: small;
+}
+main .popular_categories .popular_categories_banners .banner_box p:nth-child(2) {
+  font-weight: bold;
+}
+main .popular_categories .popular_categories_banners .banner_box a:last-child {
+  font-size: small;
+  color: #ff4500;
+  text-decoration: none;
+}
+main .featured_brands h4 span {
+  color: #ff4500;
+}
+
+/*-----------------------------------------------footer-----------------------------------------*/
+footer .footer1 {
+  background-color: rgb(243, 236, 194);
+}
+footer .footer1 input {
+  outline: none;
+  border: none;
+  font-size: small;
+}
+footer .footer1 .btn {
+  background-color: black;
+  color: white;
+}
+footer .footer1 .btn:hover {
+  background-color: #ff4500;
+}
+
+.tooltip .tooltip-inner {
+  background-color: #ff4500;
+  font-size: 12px;
+}
+
+.tooltip .tooltip-arrow::before {
+  border-top-color: #ff4500 !important;
+}
+
+/*# sourceMappingURL=styles.css.map */

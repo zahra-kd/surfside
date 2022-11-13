@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e0ca31e47c.js" crossorigin="anonymous"></script>
+    <title>Surfside</title>
+</head>
+<body>
+<!--------------------------------------------------header----------------------------------------->
+    <header>
+<!--------------------------------------------------first navbar----------------------------------->
+    <div class="navbar border-bottom border-secondary first-nav">
+        <div class="container-fluid">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle text-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-earth-americas"></i> English
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="#"><img src="image/france-flag-icon.svg" alt="france's flag">Français</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><img src="image/germany-flag-icon.svg" alt="germany's flag">Deutsch</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><img src="image/russia-flag-icon.svg" alt="russia's flag">Pyccknñ</a>
+                    </li>
+                </ul>
+            </div> 
+            <div class="d-none d-md-block"> 
+                <p class="text-secondary mb-0">Trendy 25 silver jewelry <span class="fw-bold">Shop Now</span></p>
+            </div>
+            <div class="d-flex">
+                <i class="bi bi-key"></i>
+                <a href="#" class="text-secondary ms-3 text-decoration-none">Log In</a>
+                <span class="text-secondary ms-3">/</span>
+                <a href="#" class="ms-3 text-secondary text-decoration-none">Sign Up</a>
+            </div>
+        </div>
+    </div>
+<!--------------------------------------------------second navbar---------------------------------->
+    <div class="navbar second_nav d-none d-md-block">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="image/logo.png" alt="logo">
+            </a>
+            <form role="search" class="col-md-4 col-lg-6">
+                <input class="form-control border-0 rounded-pill bg-light" type="search" placeholder="Search for items..." aria-label="Search">
+            </form>
+            <div class="d-flex">
+                <div class="me-4 position-relative heart_icon">
+                    <i class="bi bi-heart fs-3"></i>
+                </div>
+                <div class="me-2 position-relative bag_icon">
+                    <i class="bi bi-bag fs-3"></i>
+                </div>
+            </div>
+            <button class="d-lg-none navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+<!---------------------------------------------------main navbar----------------------------------->
+    <nav class="navbar navbar-expand-lg main_nav">
+        <div class="container-fluid">
+            <button class="d-block d-md-none navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-3 mb-lg-0">
+                    <!------------------------------------dropdown-list of browse categories-------------------->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-grid text-secondary me-1"></i>Browse Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Women's Clothing</a></li>
+                            <li><a class="dropdown-item" href="#">Men's Clothing</a></li>
+                            <li><a class="dropdown-item" href="#">Cellphones</a></li>
+                            <li><a class="dropdown-item" href="#">omputer & Office</a></li>
+                            <li><a class="dropdown-item" href="#">Consumer Electronics </a></li>
+                            <li><a class="dropdown-item" href="#">Jewelry & Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Home & Garden</a></li>
+                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            <li><a class="dropdown-item" href="#">Mother & kids</a></li>
+                        </ul>
+                    </li>               
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold home_link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Shop</a>
+                    </li>
+                    <!-----------------------------dropdown list of our collection category----------------->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Collections</a>
+                        <ul class="dropdown-menu ">
+                            <ul class="d-flex flex-column flex-sm-column flex-md-row ps-0">
+                                <ul class="vertical_list ps-0">
+                                    <li><a href="#" class="dropdown-item fw-bold">woman's Fashion</a></li>
+                                    <li><a class="dropdown-item" href="#">Dresses</a></li>
+                                    <li><a class="dropdown-item" href="#">Blouses & Shirts</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoodies & Sweatshirts</a></li>
+                                </ul>
+                                <ul class="vertical_list ps-0">
+                                    <li><a href="#" class="dropdown-item fw-bold">Man's Fashion</a></li>
+                                    <li><a class="dropdown-item" href="#">Jackets</a></li>
+                                    <li><a class="dropdown-item" href="#">Casual Faux Leather</a></li>
+                                    <li><a class="dropdown-item" href="#">Casual Pants</a></li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </li>
+                    <!----------------------------------end of the dropdown list------------------------------>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Contact</a>
+                    </li>
+                    <!--------------------------dropdown list of my account category--------------------------->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Account</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#">Products</a></li>
+                            <li><a class="dropdown-item" href="#">Categories</a></li>
+                            <li><a class="dropdown-item" href="#">Coupons</a></li>
+                            <li><a class="dropdown-item" href="#">Orders</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                    <!-------------------------------------end of the dropdown list---------------------------->
+                </ul>
+                <div class="fw-bold">
+                    <p class="mb-0"><i class="bi bi-phone"></i>Tol Free <span>(+1)0000 000 000</span></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+<!---------------------------------------------------hight light section------------------------------------>
+    <section class="hight-light py-3">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row col-sm-11 col-md-10 mx-auto d-flex flex-sm-column flex-md-row">
+                        <div class="col-sm-8 col-md-6 col-lg-5 align-self-center text-center text-md-start mx-auto">
+                            <h4>Trade-in offer</h4>
+                            <h2 class="fs-bold">Super value deals</h2>
+                            <h1 class="fs-bold">On all products</h1>
+                            <p>Save more with coupons up to 70% off</p>
+                            <button class="btn">Shop Now</button>
+                        </div>
+                        <div class=" col-sm-8 col-md-6 col-lg-7 img-fluid mb-2 mx-auto mt-2">
+                            <img src="image/Slide.png" class="d-block w-100" alt="slider">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row col-sm-11 col-md-10 mx-auto d-flex flex-sm-column flex-md-row">
+                        <div class="col-sm-8 col-md-6 col-lg-5 align-self-center text-center text-md-start mx-auto">
+                            <h4>Hot promotions</h4>
+                            <h2 class="fs-bold">Fashion trending</h2>
+                            <h1 class="fs-bold">Great collection</h1>
+                            <p>Save more with coupons up to 20% off</p>
+                            <button class="btn">Discover Now</button>
+                        </div>
+                        <div class=" col-sm-8 col-md-6 col-lg-7 img-fluid mx-auto mt-2">
+                            <img src="image/slider-2.png" class="d-block w-100" alt="slider">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+<!----------------------------------------------------categories section------------------------------------>
+    <section class="categories py-3">
+        <div class="container">
+            <div class="row text-center gy-2 gx-2 feature_container ">
+                <div class="col-10 col-sm-6 col-md-4 col-lg-2 mx-auto">
+                    <div class="feature_box p-3 ">
+                        <img src="image/feature-1.png" alt="feature" class="img-fluid mb-3">
+                        <p class="mb-0 p-1">Free shipping</p>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-md-4 col-lg-2 mx-auto">
+                    <div class="feature_box p-3">
+                        <img src="image/feature-2.png" alt="feature" class="img-fluid mb-3">
+                        <p class="mb-0 p-1">Online order</p>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-md-4 col-lg-2 mx-auto">
+                    <div class="feature_box p-3">
+                    <img src="image/feature-3.png" alt="feature" class="img-fluid mb-3">
+                    <p class="mb-0 p-1">Save money</p>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-md-4 col-lg-2 mx-auto">
+                    <div class="feature_box p-3">
+                        <img src="image/feature-4.png" alt="feature" class="img-fluid mb-3">
+                        <p class="mb-0 p-1 ">Promotions</p>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-md-4 col-lg-2 mx-auto">
+                    <div class="feature_box p-3">
+                        <img src="image/feature-5.png" alt="feature" class="img-fluid mb-3">
+                        <p class="mb-0 p-1">Happy sell</p>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-md-4 col-lg-2 mx-auto">
+                    <div class="feature_box p-3">
+                        <img src="image/feature-6.png" alt="feature" class="img-fluid mb-3">
+                        <p class="mb-0 p-1">24/7 Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-----------------------------------------------------catalog section-------------------------------------->
+<section class="catalog py-3">
+    <div class="container">
+        <div class="catalog_btn d-flex justify-content-between align-items-center flex-wrap pb-2">
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn">Featured</button>
+                <button type="button" class="btn">Popular</button>
+                <button type="button" class="btn">New added</button>
+            </div>
+            <a href="#" class="fw-bold text-decoration-none">View More<i class="fa-solid fa-angles-right ms-1"></i></a>
+        </div>
+        <div class="catalog_container row pt-2 gy-2 gx-2"> <!-------gx-2 ne marche pas------>
+            <div class="catalog_item col-10 col-lg-3 col-md-4 col-sm-6 p-3 mx-auto">
+                <div class="catalog_item_pic position-relative">
+                    <div class="flip_pic position-absolute top-0">
+                        <img class="img-fluid rounded" src="image/product-1-2.jpg"  alt="product picture">
+                        <div class="h-100 w-100 d-flex justify-content-center align-items-center position-absolute top-0">
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Quick view">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Add to Wishlist">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="image/product-1-1.jpg" alt="product picture">
+                </div>
+                <div class="catalog_item_detail mt-2 position-relative">
+                    <p class="text-secondary mb-0">Clothing</p>
+                    <p class="mb-0 fw-bold">Colorful Pattern Shirts</p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="text-secondary">90%</span>
+                    </div>
+                    <p class="fw-bold d-inline-block me-1 mb-0">$238</p>
+                    <span class="text-secondary text-decoration-line-through mb-0">$245</span>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="bi bi-bag-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog_item col-10 col-lg-3 col-md-4 col-sm-6 p-3 mx-auto">
+                <div class="catalog_item_pic position-relative">
+                    <div class="flip_pic position-absolute top-0">
+                        <img class="img-fluid rounded" src="image/product-2-2.jpg"  alt="product picture">
+                        <div class="h-100 w-100 d-flex justify-content-center align-items-center position-absolute top-0">
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Quick view">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Add to Wishlist">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="image/product-2-1.jpg" alt="product picture">
+                </div>
+                <div class="catalog_item_detail mt-2 position-relative">
+                    <p class="text-secondary mb-0">Clothing</p>
+                    <p class="mb-0 fw-bold">Plain Color Pocket Shirts </p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="text-secondary">50%</span>
+                    </div>
+                    <p class="fw-bold d-inline-block me-1 mb-0">$138</p>
+                    <span class="text-secondary text-decoration-line-through mb-0">$255</span>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="bi bi-bag-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog_item col-10 col-lg-3 col-md-4 col-sm-6 p-3 mx-auto">
+                <div class="catalog_item_pic position-relative">
+                    <div class="flip_pic position-absolute top-0">
+                        <img class="img-fluid rounded" src="image/product-3-2.jpg"  alt="product picture">
+                        <div class="h-100 w-100 d-flex justify-content-center align-items-center position-absolute top-0">
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Quick view">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Add to Wishlist">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="image/product-3-1.jpg" alt="product picture">
+                </div>
+                <div class="catalog_item_detail mt-2 position-relative">
+                    <p class="text-secondary mb-0">Clothing</p>
+                    <p class="mb-0 fw-bold">Vintage Floral Oil Shirts </p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="text-secondary">95%</span>
+                    </div>
+                    <p class="fw-bold d-inline-block me-1 mb-0">$338</p>
+                    <span class="text-secondary text-decoration-line-through mb-0">$445</span>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="bi bi-bag-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog_item col-10 col-lg-3 col-md-4 col-sm-6 p-3 mx-auto">
+                <div class="catalog_item_pic position-relative">
+                    <div class="flip_pic position-absolute top-0">
+                        <img class="img-fluid rounded" src="image/product-4-2.jpg"  alt="product picture">
+                        <div class="h-100 w-100 d-flex justify-content-center align-items-center position-absolute top-0">
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Quick view">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Add to Wishlist">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="image/product-4-1.jpg" alt="product picture">
+                </div>
+                <div class="catalog_item_detail mt-2 position-relative">
+                    <p class="text-secondary mb-0">Shirt</p>
+                    <p class="mb-0 fw-bold">Ethnic Floral Casual Shirts</p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="text-secondary">70%</span>
+                    </div>
+                    <p class="fw-bold d-inline-block me-1 mb-0">$238</p>
+                    <span class="text-secondary text-decoration-line-through mb-0">$245</span>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="bi bi-bag-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog_item col-10 col-lg-3 col-md-4 col-sm-6 p-3 mx-auto">
+                <div class="catalog_item_pic position-relative">
+                    <div class="flip_pic position-absolute top-0">
+                        <img class="img-fluid rounded" src="image/product-5-2.jpg"  alt="product picture">
+                        <div class="h-100 w-100 d-flex justify-content-center align-items-center position-absolute top-0">
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Quick view">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Add to Wishlist">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="image/product-5-1.jpg" alt="product picture">
+                </div>
+                <div class="catalog_item_detail mt-2 position-relative">
+                    <p class="text-secondary mb-0">Shirt</p>
+                    <p class="mb-0 fw-bold">Flowers Sleeve Lapel Shirts </p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="text-secondary">70%</span>
+                    </div>
+                    <p class="fw-bold d-inline-block me-1 mb-0">$28</p>
+                    <span class="text-secondary text-decoration-line-through mb-0">$45</span>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="bi bi-bag-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog_item col-10 col-lg-3 col-md-4 col-sm-6 p-3 mx-auto">
+                <div class="catalog_item_pic position-relative">
+                    <div class="flip_pic position-absolute top-0">
+                        <img class="img-fluid rounded" src="image/product-6-2.jpg"  alt="product picture">
+                        <div class="h-100 w-100 d-flex justify-content-center align-items-center position-absolute top-0">
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Quick view">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Add to Wishlist">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="image/product-6-1.jpg" alt="product picture">
+                </div>
+                <div class="catalog_item_detail mt-2 position-relative">
+                    <p class="text-secondary mb-0">Clothing</p>
+                    <p class="mb-0 fw-bold">Flowers Sleeve Lapel Shirts </p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="text-secondary">70%</span>
+                    </div>
+                    <p class="fw-bold d-inline-block me-1 mb-0">$238</p>
+                    <span class="text-secondary text-decoration-line-through mb-0">$245</span>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="bi bi-bag-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog_item col-10 col-lg-3 col-md-4 col-sm-6 p-3 mx-auto">
+                <div class="catalog_item_pic position-relative">
+                    <div class="flip_pic position-absolute top-0">
+                        <img class="img-fluid rounded" src="image/product-7-2.jpg"  alt="product picture">
+                        <div class="h-100 w-100 d-flex justify-content-center align-items-center position-absolute top-0">
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Quick view">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Add to Wishlist">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="image/product-7-1.jpg" alt="product picture">
+                </div>
+                <div class="catalog_item_detail mt-2 position-relative">
+                    <p class="text-secondary mb-0">Shoes</p>
+                    <p class="mb-0 fw-bold">Stitching Hole Sandals</p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="text-secondary">98%</span>
+                    </div>
+                    <p class="fw-bold d-inline-block me-1 mb-0">$1275</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="bi bi-bag-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog_item col-10 col-lg-3 col-md-4 col-sm-6 p-3 mx-auto">
+                <div class="catalog_item_pic position-relative">
+                    <div class="flip_pic position-absolute top-0">
+                        <img class="img-fluid rounded" src="image/product-8-2.jpg"  alt="product picture">
+                        <div class="h-100 w-100 d-flex justify-content-center align-items-center position-absolute top-0">
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Quick view">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <div class="me-2 d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Add to Wishlist">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" data-bs-toggle="tooltip" data-bs-offset="0,5" data-bs-placement="top" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="image/product-8-1.jpg" alt="product picture">
+                </div>
+                <div class="catalog_item_detail mt-2 position-relative">
+                    <p class="text-secondary mb-0">Shirt</p>
+                    <p class="mb-0 fw-bold">Mens Porcelain Shirt</p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="text-secondary">70%</span>
+                    </div>
+                    <p class="fw-bold d-inline-block me-1 mb-0">$238</p>
+                    <span class="text-secondary text-decoration-line-through mb-0">$245</span>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="bi bi-bag-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+<!------------------------------------------------------banner section-------------------------------------->
+<section class="banner py-3">
+    <div class="container py-4">
+        <p class="fw-bold">Repair Servives</p>
+        <h2 class="mb-0 fw-bold">We're an Apple</h2>
+        <h2 class="mb-4 fw-bold">Authorised Service Provider</h2>
+        <button class="btn">Learn More <i class="bi bi-arrow-right"></i></button>
+    </div>
+</section>
+<!------------------------------------------------------popular categories---------------------------------->
+<section class="popular_categories py-3">
+    <div class="container">
+        <h4><span>Popular</span> Categories</h4>
+        <div class="row text-center text-secondary fw-bold fs-6 gx-2 gy-2"> <!-----gx-2 ne marche pas----->
+            <div class="popular_category_card col-10 col-lg-2 col-md-3 col-sm-6 p-3 mx-auto">
+                <div class="overflow-hidden">
+                    <img class="img-fluid rounded" src="image/category-thumb-2.jpg" alt="item picture">
+                    <p class="mb-0 mt-3">Sags</p>
+                </div>
+            </div>
+            <div class="popular_category_card col-10 col-lg-2 col-md-3 col-sm-6 p-3 mx-auto">
+                <div class="overflow-hidden">
+                    <img class="img-fluid rounded" src="image/category-thumb-4.jpg" alt="item picture">
+                    <p class="mb-0 mt-3">Scarf Cap</p>
+                </div>
+            </div>
+            <div class="popular_category_card col-10 col-lg-2 col-md-3 col-sm-6 p-3 mx-auto">
+                <div class="overflow-hidden">
+                    <img class="img-fluid rounded" src="image/category-thumb-5.jpg" alt="item picture">
+                    <p class="mb-0 mt-3">Shoes</p>
+                </div>
+            </div>
+            <div class="popular_category_card col-10 col-lg-2 col-md-3 col-sm-6 p-3 mx-auto">
+                <div class="overflow-hidden">
+                    <img class="img-fluid rounded" src="image/category-thumb-6.jpg" alt="item picture">
+                    <p class="mb-0 mt-3">Pillowcase</p>
+                </div>
+            </div>
+            <div class="popular_category_card col-10 col-lg-2 col-md-3 col-sm-6 p-3 mx-auto">
+                <div class="overflow-hidden">
+                    <img class="img-fluid rounded" src="image/category-thumb-7.jpg" alt="item picture">
+                    <p class="mb-0 mt-3">Jumpsuits</p>
+                </div>
+            </div>
+            <div class="popular_category_card col-10 col-lg-2 col-md-3 col-sm-6 p-3 mx-auto">
+                <div class="overflow-hidden">
+                    <img class="img-fluid rounded" src="image/category-thumb-8.jpg" alt="item picture">
+                    <p class="mb-0 mt-3">Hats</p>
+                </div>
+            </div>
+        </div>
+        <div class="popular_categories_banners row my-3 gy-2">
+            <div class="col-10 col-md-4 position-relative mx-auto">
+                <img class="img-fluid" src="image/banner-1.png" alt="banner">
+                <div class="banner_box position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center ps-2">
+                    <p class="mb-1 mt-0 text-secondary">Smart Offer</p>
+                    <p class="mb-1 text-black">Save 20% on woman bag</p>
+                    <a class="mb-0">Shop Now <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-10 col-md-4 position-relative mx-auto">
+                <img class="img-fluid" src="image/banner-2.png" alt="banner">
+                <div class="banner_box position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center ps-2">
+                    <p class="mb-1 mt-0 text-secondary">Sale Off</p>
+                    <p class="mb-1 text-black">Great Summer Collection</p>
+                    <a class="mb-0">Shop Now <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-10 col-md-4 position-relative mx-auto">
+                <img class="img-fluid" src="image/banner-3.png" alt="banner">
+                <div class="banner_box position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center ps-2">
+                    <p class="mb-1 mt-0 text-secondary">New Arrivals</p>
+                    <p class="mb-1 text-black">Shop Today's Deals & Offers</p>
+                    <a class="mb-0">Shop Now <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!------------------------------------------------------Featured Brands------------------------------------->
+<section class="featured_brands py-3">
+    <div class="container">
+        <h4><span>Popular</span> Categories</h4>
+        <div class="row">
+            <div class="featured_brands col-10 col-lg-2 col-md-4 col-sm-6 mx-auto">
+                <img class="img-fluid" src="image/brand-1.png" alt="brand picture">
+            </div>
+            <div class="featured_brands col-10 col-lg-2 col-md-4 col-sm-6 mx-auto">
+                <img class="img-fluid" src="image/brand-2.png" alt="brand picture">
+            </div>
+            <div class="featured_brands col-10 col-lg-2 col-md-4 col-sm-6 mx-auto">
+                <img class="img-fluid" src="image/brand-3.png" alt="brand picture">
+            </div>
+            <div class="featured_brands col-10 col-lg-2 col-md-4 col-sm-6 mx-auto">
+                <img class="img-fluid" src="image/brand-4.png" alt="brand picture">
+            </div>
+            <div class="featured_brands col-10 col-lg-2 col-md-4 col-sm-6 mx-auto">
+                <img class="img-fluid" src="image/brand-5.png" alt="brand picture">
+            </div>
+            <div class="featured_brands col-10 col-lg-2 col-md-4 col-sm-6 mx-auto">
+                <img class="img-fluid" src="image/brand-6.png" alt="brand picture">
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="py-3">
+    <div class="footer1 py-3">
+        <div class="container row mx-auto">
+            <div class="col-6">
+                <p class="mb-1"><i class="bi bi-envelope me-1"></i>Sign up to Newsletter</p>
+            </div>
+            <div class="col-6 text-lg-end">
+                <p class="mb-1">...and receive $25 coupon for first shopping.</p>
+            </div>
+            <div class="input-group mb-0">
+                <input type="text" class="form-control" placeholder="Enter your e-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn" type="button" id="button-addon2">Suscribe</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- script hover -->
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
+</body>
+</html>
